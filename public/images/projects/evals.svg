@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="AI evaluation run dashboard mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbeaf5"/>
+      <stop offset="1" stop-color="#fdf8f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Backdrop -->
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <circle cx="76" cy="84" r="120" fill="#f6e3e6" opacity="0.55"/>
+  <circle cx="570" cy="416" r="120" fill="#e4def3" opacity="0.55"/>
+
+  <!-- Window -->
+  <rect x="78" y="86" width="500" height="340" rx="18" fill="#4a4653" opacity="0.1"/>
+  <rect x="70" y="72" width="500" height="340" rx="18" fill="#fffdfc"/>
+  <path d="M70 90a18 18 0 0 1 18-18h464a18 18 0 0 1 18 18v24H70Z" fill="#f8efe9"/>
+  <circle cx="96" cy="93" r="5.5" fill="#ff5f57"/>
+  <circle cx="116" cy="93" r="5.5" fill="#febc2e"/>
+  <circle cx="136" cy="93" r="5.5" fill="#28c840"/>
+  <line x1="70" y1="114" x2="570" y2="114" stroke="rgba(74,70,83,0.12)"/>
+
+  <!-- Tabs -->
+  <rect x="104" y="126" width="88" height="26" rx="13" fill="#8a5e73"/>
+  <rect x="200" y="126" width="88" height="26" rx="13" fill="#fffdfc" stroke="rgba(74,70,83,0.15)"/>
+  <rect x="440" y="126" width="96" height="26" rx="13" fill="#dbeaf5"/>
+
+  <!-- Eval rows: status dot, label, before/after diff bars -->
+  <g>
+    <circle cx="118" cy="177" r="7" fill="#7cc99a"/>
+    <rect x="138" y="173" width="200" height="8" rx="4" fill="#ececf1"/>
+    <rect x="468" y="169" width="64" height="7" rx="3.5" fill="#dbeaf5"/>
+    <rect x="468" y="179" width="40" height="7" rx="3.5" fill="#8a5e73" opacity="0.75"/>
+  </g>
+  <g>
+    <circle cx="118" cy="215" r="7" fill="#7cc99a"/>
+    <rect x="138" y="211" width="150" height="8" rx="4" fill="#ececf1"/>
+    <rect x="468" y="207" width="64" height="7" rx="3.5" fill="#dbeaf5"/>
+    <rect x="468" y="217" width="40" height="7" rx="3.5" fill="#8a5e73" opacity="0.75"/>
+  </g>
+  <g>
+    <circle cx="118" cy="253" r="7" fill="#e98a8a"/>
+    <rect x="138" y="249" width="220" height="8" rx="4" fill="#ececf1"/>
+    <rect x="468" y="245" width="64" height="7" rx="3.5" fill="#dbeaf5"/>
+    <rect x="468" y="255" width="40" height="7" rx="3.5" fill="#8a5e73" opacity="0.75"/>
+  </g>
+  <g>
+    <circle cx="118" cy="291" r="7" fill="#7cc99a"/>
+    <rect x="138" y="287" width="160" height="8" rx="4" fill="#ececf1"/>
+    <rect x="468" y="283" width="64" height="7" rx="3.5" fill="#dbeaf5"/>
+    <rect x="468" y="293" width="40" height="7" rx="3.5" fill="#8a5e73" opacity="0.75"/>
+  </g>
+  <g>
+    <circle cx="118" cy="329" r="7" fill="#7cc99a"/>
+    <rect x="138" y="325" width="190" height="8" rx="4" fill="#ececf1"/>
+    <rect x="468" y="321" width="64" height="7" rx="3.5" fill="#dbeaf5"/>
+    <rect x="468" y="331" width="40" height="7" rx="3.5" fill="#8a5e73" opacity="0.75"/>
+  </g>
+  <g>
+    <circle cx="118" cy="367" r="7" fill="#7cc99a"/>
+    <rect x="138" y="363" width="140" height="8" rx="4" fill="#ececf1"/>
+    <rect x="468" y="359" width="64" height="7" rx="3.5" fill="#dbeaf5"/>
+    <rect x="468" y="369" width="40" height="7" rx="3.5" fill="#8a5e73" opacity="0.75"/>
+  </g>
+</svg>

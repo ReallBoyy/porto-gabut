@@ -1,0 +1,16 @@
+# Files that must not be uploaded to Vercel. Dependencies are installed on the
+# platform (composer.json + package.json are enough), secrets stay local, and
+# local caches/logs have no business in a deployment.
+.env
+.env.*.php
+auth.json
+/vendor
+/node_modules
+/tests
+/storage/logs
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/views
+.phpunit.cache
+.phpunit.result.cache
+.vercel

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="AI support assistant chat mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e4def3"/>
+      <stop offset="1" stop-color="#fdf8f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Backdrop -->
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <circle cx="70" cy="70" r="120" fill="#dcefe4" opacity="0.55"/>
+  <circle cx="580" cy="430" r="120" fill="#f6e3e6" opacity="0.55"/>
+
+  <!-- Window -->
+  <rect x="78" y="86" width="500" height="340" rx="18" fill="#4a4653" opacity="0.1"/>
+  <rect x="70" y="72" width="500" height="340" rx="18" fill="#fffdfc"/>
+  <path d="M70 90a18 18 0 0 1 18-18h464a18 18 0 0 1 18 18v24H70Z" fill="#f8efe9"/>
+  <circle cx="96" cy="93" r="5.5" fill="#ff5f57"/>
+  <circle cx="116" cy="93" r="5.5" fill="#febc2e"/>
+  <circle cx="136" cy="93" r="5.5" fill="#28c840"/>
+  <line x1="70" y1="114" x2="570" y2="114" stroke="rgba(74,70,83,0.12)"/>
+
+  <!-- Incoming question bubble -->
+  <rect x="104" y="136" width="250" height="56" rx="14" fill="#f6e3e6"/>
+  <rect x="118" y="150" width="176" height="9" rx="4.5" fill="#ffffff" opacity="0.85"/>
+  <rect x="118" y="168" width="122" height="9" rx="4.5" fill="#ffffff" opacity="0.85"/>
+
+  <!-- Outgoing answer bubble -->
+  <rect x="286" y="208" width="250" height="56" rx="14" fill="#8a5e73"/>
+  <rect x="300" y="222" width="196" height="9" rx="4.5" fill="#ffffff" opacity="0.9"/>
+  <rect x="300" y="240" width="140" height="9" rx="4.5" fill="#ffffff" opacity="0.75"/>
+
+  <!-- Citation chips -->
+  <rect x="286" y="276" width="70" height="18" rx="9" fill="#e4def3"/>
+  <rect x="364" y="276" width="70" height="18" rx="9" fill="#e4def3"/>
+  <rect x="442" y="276" width="70" height="18" rx="9" fill="#e4def3"/>
+
+  <!-- Source card -->
+  <rect x="104" y="316" width="280" height="68" rx="12" fill="#ffffff" stroke="rgba(74,70,83,0.14)"/>
+  <circle cx="130" cy="350" r="12" fill="#dbeaf5"/>
+  <rect x="152" y="334" width="182" height="8" rx="4" fill="#ececf1"/>
+  <rect x="152" y="352" width="130" height="8" rx="4" fill="#ececf1"/>
+
+  <!-- Typing indicator -->
+  <circle cx="412" cy="350" r="5" fill="#6f6a78" opacity="0.5"/>
+  <circle cx="428" cy="350" r="5" fill="#6f6a78" opacity="0.7"/>
+  <circle cx="444" cy="350" r="5" fill="#6f6a78" opacity="0.9"/>
+</svg>

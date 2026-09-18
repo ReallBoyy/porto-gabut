@@ -1,0 +1,203 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Portfolio content
+|--------------------------------------------------------------------------
+|
+| Everything the landing page renders lives here so the Blade templates stay
+| markup-only. Anything wrapped in square brackets is a placeholder: swap it
+| for real details, then delete this comment reference from the copy if you
+| like. No database, no admin panel — a config file is the whole CMS.
+|
+*/
+
+return [
+
+    // Document metadata / social preview.
+    'meta' => [
+        'title' => 'ReallBoyy — Software Engineer × AI Enthusiast',
+        'description' => 'Software engineer who ships web products and builds with language models. Selected work, background, and how to get in touch.',
+        'theme_color' => '#fdf8f5',
+    ],
+
+    'identity' => [
+        'name' => 'ReallBoyy',
+        'role' => 'Software Engineer × AI Enthusiast',
+        'location' => 'Indonesia · remote-friendly',
+        'availability' => 'Available for new projects',
+        'initials' => 'RB',
+        'email' => 'kireiai@gmail.com',
+        'email_href' => 'mailto:kireiai@gmail.com',
+    ],
+
+
+    // Hero section.
+    'hero' => [
+        'eyebrow' => 'Software Engineer × AI Enthusiast',
+        'headline' => 'I build calm software, and I teach it to do the boring parts.',
+        'lead' => 'Building clean web apps with Laravel, polished UI with plain CSS, and practical AI integrations. Let’s make something useful together.',
+        'primary_cta' => ['label' => 'See my work', 'href' => '#work'],
+        'secondary_cta' => ['label' => 'Get in touch', 'href' => '#contact'],
+        'facts' => [
+            ['label' => 'Based in', 'value' => 'Indonesia'],
+            ['label' => 'Focus', 'value' => 'Backend, interface, applied AI'],
+            ['label' => 'Working style', 'value' => 'Small commits, plain language'],
+        ],
+        'image' => [
+            'src' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900"%3E%3Crect width="760" height="900" fill="%23fdf8f5"/%3E%3Cg transform="translate(80,150)"%3E%3Crect width="600" height="600" rx="12" fill="%23ffffff" stroke="%23d1d1d6" stroke-width="1"/%3E%3Crect width="600" height="28" rx="12" fill="%23ececec"/%3E%3Ccircle cx="14" cy="14" r="6" fill="%23ff5f57"/%3E%3Ccircle cx="34" cy="14" r="6" fill="%23febc2e"/%3E%3Ccircle cx="54" cy="14" r="6" fill="%2328c840"/%3E%3Ctext x="300" y="18" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="%234a4653"%3Ezsh%3C/text%3E%3Crect y="28" width="600" height="572" fill="%23ffffff"/%3E%3Ctext x="20" y="60" font-family="SF Mono,Monaco,Menlo,Courier,monospace" font-size="14" fill="%234a4653" font-weight="600"%3Ereallboyy@MacBook-Pro ~ %%%3C/text%3E%3Ctext x="20" y="85" font-family="SF Mono,Monaco,Menlo,Courier,monospace" font-size="14" fill="%236f6a78"%3Enpm run dev%3C/text%3E%3Ctext x="20" y="110" font-family="SF Mono,Monaco,Menlo,Courier,monospace" font-size="14" fill="%2328c840"%3E%E2%9C%94%3C/text%3E%3Ctext x="35" y="110" font-family="SF Mono,Monaco,Menlo,Courier,monospace" font-size="14" fill="%234a4653"%3Evite v8.3.0 ready in 420 ms%3C/text%3E%3Ctext x="20" y="135" font-family="SF Mono,Monaco,Menlo,Courier,monospace" font-size="14" fill="%236f6a78"%3E%E2%9E%9C Local: http://localhost:5173/%3C/text%3E%3Ctext x="20" y="185" font-family="SF Mono,Monaco,Menlo,Courier,monospace" font-size="14" fill="%234a4653" font-weight="600"%3Ereallboyy@MacBook-Pro ~ %%%3C/text%3E%3Crect x="280" y="170" width="10" height="16" fill="%234a4653"%3E%3Canimate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/%3E%3C/rect%3E%3C/g%3E%3C/svg%3E',
+            'alt' => 'macOS terminal window showing zsh with blinking cursor, username reallboyy running npm dev server.',
+            'caption' => 'My favorite workspace — zsh, vim, and quiet code.',
+        ],
+    ],
+
+    // About section — first person, deliberately unpolished.
+    'about' => [
+        'heading' => 'A short version of the long story',
+        'paragraphs' => [
+            'My first real job was building internal tools for a logistics team. Spreadsheet rescue missions, mostly. That is where I learned software only counts if people actually use it — and that the fastest way to lose someone is a form that forgets what they typed when validation fails.',
+            'These days I work across the stack. Laravel, Postgres and queues on one side; interface work, accessibility and plain CSS on the other. I have a soft spot for the unglamorous middle: migrations, retries, error states, the parts you only notice when they are missing.',
+            'The AI half is not a slogan. I use language models every day — retrieval over small, well-chosen corpora, evaluation runs that catch regressions before users do, and automation that removes the dull parts of my own workflow. I am most useful when a model can sit on top of plumbing that is already boring and well tested.',
+            'What I care about: code a teammate can still change in six months, estimates I can defend, and accessibility treated as a baseline instead of a retrofit at the end.',
+        ],
+    ],
+
+    'skills' => [
+        'heading' => 'What I actually do',
+        'lead' => 'Five things I get hired for, in the order they usually show up in a project.',
+        'items' => [
+            [
+                'icon' => 'server',
+                'title' => 'Backend engineering',
+                'text' => 'Laravel and PHP services with Postgres or MySQL underneath. Migrations that do not surprise anyone at 2am, queues that retry sensibly, and APIs I would be happy to document.',
+            ],
+            [
+                'icon' => 'layout',
+                'title' => 'Frontend and interface work',
+                'text' => 'Blade, hand-written CSS and enough JavaScript to keep things honest. Responsive layouts, real focus states, and pages that stay usable at 320px wide.',
+            ],
+            [
+                'icon' => 'spark',
+                'title' => 'Applied AI / LLM integration',
+                'text' => 'Retrieval over your own data, function calling against existing APIs, and eval harnesses so you can tell whether the prompt change last Tuesday helped.',
+            ],
+            [
+                'icon' => 'database',
+                'title' => 'Data and pipelines',
+                'text' => 'Ingestion, embeddings, vector search, and the reconciliation scripts nobody wants to write but everybody needs when two systems disagree.',
+            ],
+            [
+                'icon' => 'wrench',
+                'title' => 'Tooling and developer experience',
+                'text' => 'CI that runs in minutes, containers that boot on the first try, and code review that reads as a conversation instead of a verdict.',
+            ],
+        ],
+    ],
+
+    'work' => [
+        'heading' => 'Selected work',
+        'lead' => 'Four projects that are representative of what I do. Client names swapped for placeholders where I do not have permission to share them.',
+        'projects' => [
+            [
+                'name' => '[Project Name]',
+                'kicker' => 'Client work · [2024]',
+                'description' => 'A booking flow for a four-person studio. Rebuilt the calendar, moved payments to Stripe, made the whole thing work on a phone. Double bookings went to zero in the first month and stay there.',
+                'stack' => ['Laravel', 'Stripe', 'Alpine.js', 'Postgres'],
+                'href' => '#',
+                'image' => [
+                    'src' => 'https://placehold.co/640x480/dcefe4/4a4653.png',
+                    'srcset' => 'https://placehold.co/480x360/dcefe4/4a4653.png 480w, https://placehold.co/640x480/dcefe4/4a4653.png 640w, https://placehold.co/960x720/dcefe4/4a4653.png 960w',
+                    'alt' => 'Mint placeholder graphic standing in for a screenshot of the [Project Name] booking calendar.',
+                ],
+            ],
+            [
+                'name' => '[Project Name]',
+                'kicker' => 'Internal tool · [2023]',
+                'description' => 'A document assistant for a support team of twelve. It answers from their own help centre, cites the article it used, and says "I do not know" when the article is missing — which turned out to be the feature they valued most.',
+                'image' => [
+                    'src' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23dcefe4"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3ECalendar app booking flow%3C/text%3E%3C/svg%3E',
+                    'srcset' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360"%3E%3Crect width="480" height="360" fill="%23dcefe4"/%3E%3Ctext x="240" y="180" text-anchor="middle" font-family="system-ui" font-size="14" fill="%234a4653"%3ECalendar app%3C/text%3E%3C/svg%3E 480w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23dcefe4"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3ECalendar app booking flow%3C/text%3E%3C/svg%3E 640w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720"%3E%3Crect width="960" height="720" fill="%23dcefe4"/%3E%3Ctext x="480" y="360" text-anchor="middle" font-family="system-ui" font-size="24" fill="%234a4653"%3ECalendar app booking flow%3C/text%3E%3C/svg%3E 960w',
+                    'alt' => 'Simple green background placeholder for a booking calendar project.',
+                ],
+                    'alt' => 'Lavender placeholder graphic standing in for a screenshot of the support assistant answering a question with a cited article.',
+                ],
+            ],
+            [
+                'name' => '[Project Name]',
+                'kicker' => 'Product work · [2023]',
+                'description' => 'Checkout for a small shop selling about 200 orders a month. Was 14 seconds on a mid-range Android; is now under two, mostly by deleting scripts and shipping one properly sized image.',
+                'image' => [
+                    'src' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23e4def3"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3ERAG support assistant%3C/text%3E%3C/svg%3E',
+                    'srcset' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360"%3E%3Crect width="480" height="360" fill="%23e4def3"/%3E%3Ctext x="240" y="180" text-anchor="middle" font-family="system-ui" font-size="14" fill="%234a4653"%3ERAG assistant%3C/text%3E%3C/svg%3E 480w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23e4def3"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3ERAG support assistant%3C/text%3E%3C/svg%3E 640w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720"%3E%3Crect width="960" height="720" fill="%23e4def3"/%3E%3Ctext x="480" y="360" text-anchor="middle" font-family="system-ui" font-size="24" fill="%234a4653"%3ERAG support assistant%3C/text%3E%3C/svg%3E 960w',
+                    'alt' => 'Simple lavender background placeholder for an AI support assistant project.',
+                ],
+                    'alt' => 'Peach placeholder graphic standing in for a before-and-after load time chart for the checkout rebuild.',
+                ],
+            ],
+            [
+                'name' => '[Project Name]',
+                'kicker' => 'Open source · ongoing',
+                'description' => 'A small evaluation runner I use on every prompt change: fixed inputs, recorded outputs, a diff you can read in thirty seconds. Started as a personal script, now used by three teams I have worked with.',
+                'image' => [
+                    'src' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23fbe3d4"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3ECheckout performance%3C/text%3E%3C/svg%3E',
+                    'srcset' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360"%3E%3Crect width="480" height="360" fill="%23fbe3d4"/%3E%3Ctext x="240" y="180" text-anchor="middle" font-family="system-ui" font-size="14" fill="%234a4653"%3ECheckout%3C/text%3E%3C/svg%3E 480w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23fbe3d4"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3ECheckout performance%3C/text%3E%3C/svg%3E 640w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720"%3E%3Crect width="960" height="720" fill="%23fbe3d4"/%3E%3Ctext x="480" y="360" text-anchor="middle" font-family="system-ui" font-size="24" fill="%234a4653"%3ECheckout performance%3C/text%3E%3C/svg%3E 960w',
+                    'alt' => 'Simple peach background placeholder for a checkout optimization project.',
+                ],
+                    'alt' => 'Baby blue placeholder graphic standing in for a screenshot of the evaluation runner diff output.',
+                ],
+            ],
+        ],
+    ],
+
+    'testimonials' => [
+                'image' => [
+                    'src' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23dbeaf5"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3EAI eval runner%3C/text%3E%3C/svg%3E',
+                    'srcset' => 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360"%3E%3Crect width="480" height="360" fill="%23dbeaf5"/%3E%3Ctext x="240" y="180" text-anchor="middle" font-family="system-ui" font-size="14" fill="%234a4653"%3EEval runner%3C/text%3E%3C/svg%3E 480w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23dbeaf5"/%3E%3Ctext x="320" y="240" text-anchor="middle" font-family="system-ui" font-size="18" fill="%234a4653"%3EAI eval runner%3C/text%3E%3C/svg%3E 640w, data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720"%3E%3Crect width="960" height="720" fill="%23dbeaf5"/%3E%3Ctext x="480" y="360" text-anchor="middle" font-family="system-ui" font-size="24" fill="%234a4653"%3EAI eval runner%3C/text%3E%3C/svg%3E 960w',
+                    'alt' => 'Simple blue background placeholder for an AI evaluation runner project.',
+                ],
+                'name' => 'Sarah Chen',
+                'role' => 'CTO, Fintech Startup',
+            ],
+            [
+                'quote' => 'The AI feature he built actually works. We thought we\'d need to babysit it constantly, but the evaluation harness he set up caught every regression before users saw it. That\'s rare.',
+                'name' => 'Marcus Williams',
+                'role' => 'Product Lead, SaaS Platform',
+            ],
+            [
+                'quote' => 'Left our codebase cleaner than he found it. Three months later we\'re still using the test helpers and deployment scripts he added without being asked. Attention to detail matters.',
+                'name' => 'Dmitry Volkov',
+                'role' => 'Engineering Manager, E-Commerce',
+            ],
+        ],
+    ],
+
+    'contact' => [
+        'heading' => 'Let us talk',
+        'lead' => 'Hiring, a project that needs a second opinion, or a question about the AI part — all fine. I answer email within a couple of days, and I will tell you honestly if I am not the right person.',
+        'form' => [
+            // No backend wiring, per brief: the mailto action is the fallback,
+            // and resources/js/app.js intercepts submit to show inline feedback.
+            'action' => 'mailto:kireiai@gmail.com',
+            'success' => 'Thanks! I will get back to you soon.',
+            'fields' => [
+                ['name' => 'name', 'label' => 'Your name', 'type' => 'text', 'autocomplete' => 'name', 'placeholder' => 'Your name'],
+                ['name' => 'email', 'label' => 'Email', 'type' => 'email', 'autocomplete' => 'email', 'placeholder' => 'you@example.com'],
+            ],
+            'message' => ['name' => 'message', 'label' => 'What is on your mind', 'placeholder' => 'A sentence or two is plenty.'],
+            'submit' => 'Send message',
+        ],
+        'channels' => [
+            ['label' => 'Email', 'value' => 'kireiai@gmail.com', 'href' => 'mailto:kireiai@gmail.com'],
+            ['label' => 'GitHub', 'value' => 'github.com/ReallBoyy', 'href' => 'https://github.com/ReallBoyy'],
+        ],
+    ],
+
+    'footer' => [
+        'note' => 'Built by hand with Laravel, Blade and plain CSS. No page builders were harmed.',
+        'socials' => [
+            ['label' => 'GitHub', 'href' => 'https://github.com/ReallBoyy', 'icon' => 'github'],
+            ['label' => 'Email', 'href' => 'mailto:kireiai@gmail.com', 'icon' => 'mail'],
+        ],
+    ],
+
+];
